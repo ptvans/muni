@@ -1,0 +1,665 @@
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+body {
+  background-color: #222 !important;
+}
+
+#container {
+	background-color: #fbfbfc;
+	font-family: 'Helvetica Neue', 'Arial', sans-serif;
+	font-size: 18px;
+	color: #666;
+	width: 960px;
+	}
+	
+#nav {
+	background-color: #a82036;
+	padding: 8px 20px 8px 20px;
+	height: 50px;
+}	
+
+
+
+.inner-container {
+  display: none;
+}
+.inner-container.active {
+  display: block;
+}
+
+.inner {
+  text-align: center;
+}
+
+#mpact {
+    font-size: 36px;
+	color: #ccc;
+	float: left;
+}
+
+
+#mpact img {
+  
+}
+
+.row {
+    margin: 0px !important;
+}
+	
+#champion {
+    overflow-x: hidden;
+    overflow-y: auto;	
+    /*height: 600px;*/
+    padding-top: 8px;
+}
+	
+#recruits {
+}
+	
+#profile-pic img {
+	border: solid 4px #fff;
+	width: 80px;
+	height: 80px;
+    margin-right: 15px;
+	}	
+
+#champ-ranking {
+    	font-size: 30px;
+    	opacity: 0.5;
+    }
+	
+#champ-name {
+	font-size: 30px;
+}	
+
+#champ-title .name {
+    font-size: 40px;
+    font-weight: 700;
+    color: #888;
+    line-height: 38px;
+}
+
+#champ-title .rank {
+    font-size: 40px;
+    font-weight: 700;
+    color: #bfbfbf;
+    line-height: 38px;
+}
+
+
+
+#champ-actions #champ-stats div {
+    display: inline;
+    line-height: 36px;
+}   
+
+.stat-desc {
+    opacity: 0.65;
+}
+
+.stat {
+    background-color: #eee;
+    font-size: 24px;
+    margin: 0 5px 0 5px;
+    padding: 0 8px 0 8px;
+    border-radius: 12px;
+}
+
+#champ-actions {
+	
+}
+	
+	
+#champion-chart {
+    font-size: 14px;
+    background-color: #FFF;
+}
+
+
+#recruit-chart {
+        max-height: 160px;
+        font-size: 14px;
+        overflow: hidden;
+}	
+
+#timeline {
+    background-color: #fff;
+}	
+	
+	
+i {
+    opacity: 0.35;
+}
+	
+.star {
+    font-size: 12px;
+}	
+
+.header {
+    height: 30px;
+    color: #fff;
+    background-color: #888;
+    border-top: solid 2px #444;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+	
+#champ-table {
+    margin-top: 188px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: center;
+}
+	
+#champ-table thead {
+	background-image: url('../img/groovepaper.png');
+}	
+
+#champ-table thead > tr {
+    height: 45px;    
+}	
+
+[class*="span"] {
+  margin-left: 0px !important;
+}	
+
+.span10 {
+  width: 840px !important;
+}
+
+div.donate {
+   background-color: #bf287b;
+}
+
+div.watch {
+    background-color: #4f6ab7;
+}
+
+div.read {
+    background-color: #23adef;
+}
+
+div.pledge {
+    background-color: #f4ab7a;
+}
+
+td.donate {
+   color: #bf287b;
+}
+
+td.watch {
+    color: #4f6ab7;
+}
+
+td.read {
+    color: #23adef;
+}
+
+td.pledge {
+    color: #f4ab7a;
+}
+
+
+rect.donate {
+   fill: #bf287b;
+}
+
+rect.watch {
+    fill: #4f6ab7;
+}
+
+rect.read {
+    fill: #23adef;
+}
+
+rect.pledge {
+    fill: #f4ab7a;
+}
+
+.table {
+	color: #999;
+	}
+
+.table thead {
+    color: #666;
+}
+
+.table td {
+    padding: 4px !important;
+    vertical-align: middle !important;
+}
+
+.table td.name {
+	color: #666;
+}
+
+.table tbody tr:hover {
+	background-color: #E4F4F9;
+	border: solid 1px #AEE0F3;
+	color: #333;
+	cursor: pointer;
+}
+
+	
+.profilepic img {
+    width: 42px;
+    border: 3px solid #FFF;
+}
+
+
+.actions-bar {
+    background-color: #84bfeb;
+    height: 10px;
+    }  
+
+.actions-bar-stacked {
+    height: 10px;
+    float: left;
+    }  
+
+.followers-bar {
+    background-color: #77b7b7;
+    height: 10px;
+    }
+    
+.shares-bar {
+    background-color: #77b7b7;
+    height: 10px;
+    }
+    
+
+.visitors-bar {
+    background-color: #2ebebb;
+    height: 10px;
+    }
+
+.supporters-bar {
+    background-color: #d1d2d4;
+    height: 10px;
+    }
+
+.supporter-actions-bar {
+    background-color: #d1d2d4;
+    height: 10px;
+    }
+    
+.clear {
+    clear: both;
+}    
+    
+#photo {
+    float: left;
+    margin-right: 10px;
+}
+
+#champ-stats {
+    text-align: center;
+    height: 130px;
+    border-bottom: 1px solid #eee;
+}
+    
+#champ-dates {
+    height: 130px;
+    line-height: 36px;
+}    
+  
+#champ-dates div {
+    display: inline;
+}  
+  
+    
+#champ-stats #chart {
+    width: 120px;
+    height: 120px;
+    margin: 0px auto;
+}
+
+#champ-stats #stats div {
+    margin: 0px auto;
+}
+
+#champ-stats #num_visitors {
+    width: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: -70px !important;
+}
+
+#champ-stats #supporters {
+    width: 200px;
+    margin-top: 60px !important;
+    }
+
+#navigation {
+    margin-left: 750px;
+    margin-bottom: 0;
+    }
+
+.nav-pills .active a {
+    background-color: #06a8bb;
+}
+
+.nav-pills a {
+    background-color: #666;
+    color: #BBB;
+}
+
+
+
+
+
+
+
+
+/*Champion table*/
+
+#display {
+  background-color: white;
+}
+
+.champion-preview {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #bbb;
+  height: 48px;
+  margin-bottom: 32px;
+  width: 60px;
+  background-color: #fbb450;
+  cursor: pointer;
+}
+
+.champion-preview:hover, .selected {
+    border: 1px solid #24aff0;
+    padding: 1px;
+    background-color: #ebf7fe;
+    width: 60px;
+    color: #222;
+}
+
+.champion-preview.selected {
+    border-color: #aaa;
+    background-color: #fff;
+}
+
+.champion-preview .rank {
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 14px;
+}
+
+
+.champion-preview.selected .rank{
+    background-color: #40bab9;
+    color: #fff;
+}
+
+.button-on {
+
+}
+
+.button-off {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.rank {
+  height: 100%;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  background-color: #EEE;
+  float: left;
+  margin: 10px;
+}
+
+
+.detail-twitter, .detail-facebook, .detail-shares, .detail-email {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 0px;
+  margin-top: -4px;
+  background-color: #fff;
+}
+
+.channel-icon {
+    width: 16px;
+    height: 16px;
+    left: -7px;
+    top: -11px;
+    position: relative;
+    }
+
+.twitter {
+    background-image: url('../img/twitter.png');
+    background-repeat: none;
+    background-position: center;
+    background-size: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.facebook {
+    background-image: url('../img/facebook.png');
+    background-repeat: none;
+    background-position: center;
+    background-size: 20px;
+    border-radius: 10px;
+}
+
+.email {
+    background-image: url('../img/email.png');
+    background-repeat: none;
+    background-position: center;
+    background-size: 20px;
+    border-radius: 10px;
+}
+
+
+.icon-new-true {
+    background: url(../img/icon-new.png) no-repeat !important;
+    width: 32px !important;
+    opacity: 1;
+    position: relative;
+    top: -61px;
+    left: 17px;
+}
+.champion-inner {
+  margin: 10px;
+}
+
+.champion-inner {
+  margin-left: 85px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.actions {
+  line-height: 12px;
+  margin-top: 7px;
+}
+
+.num-actions {
+  float: left;
+  width: 15px;
+}
+
+.action-bar {
+  background-color: #25aae0;
+  height: 10px;
+  float: left;
+  margin-left: 4px
+}
+
+#champ-details {
+    margin-top: 20px;
+}
+
+#champ-title {
+    line-height: 22px;
+}
+
+#champ-title div {
+    display: inline;
+}
+
+#champ-location {
+    margin-right: 10px;
+}
+
+#champ-details section {
+    clear: both;
+    border-bottom: 1px solid #DDD;
+}
+
+.section-content {
+    width: 380px;
+    float: left;
+    background-color: white;
+    margin: 2px;
+    padding: 36px;
+    -webkit-box-shadow:  0px 0px 10px 1px rgba(0, 0, 0, .2);
+    box-shadow:  0px 0px 18px 1px rgba(0, 0, 0, .2);
+    margin-bottom: 16px;
+    height: 228px;
+    border-radius: 10px;
+}
+
+.section-content img {
+  width: 230px;
+  margin: 0 40px;
+}
+
+.section-content.right {
+    float: right;
+}
+
+.section-content.content-sm {
+    height: 72px;
+    padding: 24px;
+}
+
+.section-content.content-lg {
+    height: 478px;
+    margin-bottom: 16px;
+}
+
+.heading {
+    background-color: #ccc;
+}
+
+.action-chart {
+    clear: both;
+}
+
+section .title {
+    color: #053347;
+    padding: 2px;
+    font-size: 36px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+#visitor-chart {
+    text-align: center;
+}
+
+#visitor-chart {
+    height: 260px;
+}
+
+#radio-filter-new {
+    text-align: center;
+    margin: 10px;
+}
+
+/*#aggregate {
+    background-color: #f7f8f8;
+    border-bottom: 4px solid #d1d2d4;
+}*/
+
+#aggregate .inner {
+    margin-top: 10px;
+}
+
+.aggregate div {
+  height: 20px;
+}
+
+.aggregate {
+  float: left;
+}
+
+.aggregate .pill, .aggregate .channel {
+	margin: 7px 0px 15px 0px;
+    text-align: center;
+}
+
+.aggregate .pill div {
+  display: inline;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+#aggregate-chart {
+    float: right;
+    margin-right: 20px;
+}
+
+.number-highlight {
+  position: relative;
+  color: #b1b8bf;
+  font-size: 250%;
+  top: 24px;
+  padding: 10px;
+}
+
+.channel {
+  text-transform: capitalize;
+}
+
+#summary {
+  margin: 40px 20px;
+  font-size: 120%;
+  color: #b1b8bf;
+}
+
+#date-range {
+    height: 35px;
+}
+
+#date-range div {
+    background-color: #fafafb;
+    display: inline;
+    border-radius: 5px;
+    color: rgb(167, 167, 167);
+    border: 1px solid rgb(180, 180, 180);
+    padding: 8px 17px;
+    top: 010px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#champ-table .inner {
+    width: 200px;
+    margin-top: 23px;
+    margin-bottom: 30px;
+}
+
+#champ-title .icon-globe {
+    margin-right: 8px;
+}
+
+#champ-title .detail-facebook {
+    margin-right: 4px;
+}

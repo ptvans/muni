@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mpact - Champions/Recruits</title>
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- responsive 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet"> -->
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+    
+    
+    <div class="container" id="container">
+        <div id="nav">
+            <div id="mpact"><img src="img/mpact-logo.png"></div>
+            <ul class="nav nav-pills" id="navigation">
+              <li>
+                <a href="index.html">Actions</a>
+              </li>
+              <li class="active"><a href="champ-recruits.html">Recruits</a></li>
+            </ul>
+        </div>
+    
+        <div class="accordion" id="notifications">
+            <div class="accordion-group">
+                <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                    Notifications
+                </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                        70% of your champions are most effective on Facebook.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row" id="recruits">
+            <div class="span2" id="photo">
+                <div id="profile-pic">
+                    <img src="">
+                </div>
+            </div>
+            <div class="span4" id="champ-stats">
+                <div id="chart">
+                    <svg width="140" height="140" id="new_supporters"></svg>
+                </div>
+                <div id="stats">
+                </div>
+            </div>
+            <div class="span6" id="recruit-chart">
+                <div class="chart-title">Visitors by channel</div>
+                <svg width="400" height="40" id="timeline"></svg>
+                <svg width="400" height="30" id="channels"></svg>
+                <div class="chart-title" id="num_actions_by_supporters"></div>
+                <svg width="400" height="30" id="actions"></svg>
+            </div>
+        </div>
+
+        <div id="champ-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">Champion</td>
+                        <td>Actions</td>
+                        <td><i class="icon-user"></i></td>
+                        <td>Visitors</td>
+                        <td colspan="2"><i class="icon-user"></i></td>
+                        <td>Supporters</td>
+                        <td><i class="icon-star"></i></td>
+                        <td>Supporter Actions</td>
+                    </tr>
+                </thead>
+               
+            </table>
+            
+        </div>
+
+    </div>
+    <script src="js/vendor/d3.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/underscore.min.js"></script>
+    <script src="js/champ-recruits.js"></script>
+
+  </body>
+</html>
