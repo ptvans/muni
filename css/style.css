@@ -17,8 +17,8 @@ body {
 	}
 	
 #nav {
-	background-color: #a82036;
-	padding: 8px 20px 8px 20px;
+	background-color: #f0f2f3;
+	padding: 6px 18px 8px 18px;
 	height: 50px;
 }	
 
@@ -43,7 +43,7 @@ body {
 
 
 #mpact img {
-  
+  height: 36px;
 }
 
 .row {
@@ -51,10 +51,10 @@ body {
 }
 	
 #champion {
-    overflow-x: hidden;
+    /*overflow-x: hidden;
     overflow-y: auto;	
-    /*height: 600px;*/
-    padding-top: 8px;
+    height: 600px;*/
+    padding-top: 18px;
 }
 	
 #recruits {
@@ -64,7 +64,7 @@ body {
 	border: solid 4px #fff;
 	width: 80px;
 	height: 80px;
-    margin-right: 15px;
+  margin-right: 15px;
 	}	
 
 #champ-ranking {
@@ -291,11 +291,6 @@ rect.pledge {
     clear: both;
 }    
     
-#photo {
-    float: left;
-    margin-right: 10px;
-}
-
 #champ-stats {
     text-align: center;
     height: 130px;
@@ -353,29 +348,23 @@ rect.pledge {
 
 
 
-
-
-
-/*Champion table*/
+/*Side Buttons*/
 
 #display {
   background-color: white;
 }
 
 .champion-preview {
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #bbb;
   height: 48px;
   margin-bottom: 32px;
   width: 60px;
-  background-color: #fbb450;
+  background-color: #5BA4FA;
   cursor: pointer;
 }
 
 .champion-preview:hover, .selected {
-    border: 1px solid #24aff0;
     padding: 1px;
-    background-color: #ebf7fe;
+    background-color: #2F5179;
     width: 60px;
     color: #222;
 }
@@ -524,13 +513,13 @@ rect.pledge {
     width: 380px;
     float: left;
     background-color: white;
-    margin: 2px;
-    padding: 36px;
+    padding: 16px;
     -webkit-box-shadow:  0px 0px 10px 1px rgba(0, 0, 0, .2);
     box-shadow:  0px 0px 18px 1px rgba(0, 0, 0, .2);
-    margin-bottom: 16px;
-    height: 228px;
-    border-radius: 10px;
+    margin-bottom: 22px;
+    height: 218px;
+    border-radius: 10px 10px 10px 0px;
+    border-bottom: 5px #5BA4FA solid;
 }
 
 .section-content img {
@@ -540,11 +529,14 @@ rect.pledge {
 
 .section-content.right {
     float: right;
+    border-radius: 10px 10px 0px 10px;
+    text-align: right;
 }
 
 .section-content.content-sm {
     height: 72px;
-    padding: 24px;
+    padding: 12px 16px;
+    margin-top: -14px;
 }
 
 .section-content.content-lg {
@@ -563,11 +555,15 @@ rect.pledge {
 section .title {
     color: #053347;
     padding: 2px;
-    font-size: 36px;
+    font-size: 32px;
     letter-spacing: 1px;
     font-weight: bold;
-    text-align: center;
     margin-bottom: 36px;
+    line-height: 40px;
+}
+
+section .section-content.center .title {
+    text-align: center;
 }
 
 #visitor-chart {
@@ -634,32 +630,26 @@ section .title {
   color: #b1b8bf;
 }
 
-#date-range {
-    height: 35px;
+.desc {
+  margin: 10px 8px;
+  color: #5BA4FA;
+  font-size: 120%;
+  font-weight: bold;
 }
 
-#date-range div {
-    background-color: #fafafb;
-    display: inline;
-    border-radius: 5px;
-    color: rgb(167, 167, 167);
-    border: 1px solid rgb(180, 180, 180);
-    padding: 8px 17px;
-    top: 010px;
-    position: relative;
-    margin-bottom: 10px;
+.price {
+  color: #A6ADB5;
+  font-size: 75px;
+  font-weight: 200;
+  line-height: 76px;
+}
+
+.price .symbol {
+  font-size: 48px;
 }
 
 #champ-table .inner {
     width: 200px;
     margin-top: 23px;
     margin-bottom: 30px;
-}
-
-#champ-title .icon-globe {
-    margin-right: 8px;
-}
-
-#champ-title .detail-facebook {
-    margin-right: 4px;
 }

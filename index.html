@@ -17,25 +17,23 @@
     <div class="container" id="container">
         <div id="nav">
             <div id="mpact">
-                <img src="img/muni-sm.png"></img>
+                <img src="img/sfmta-logo.png"></img>
             </div>
         </div>
         <div class="inner-container active" id="London">
             <div class="row" id="aggregate">
                 <div class="span12 inner">
                     <span class="number-highlight">
-                            Select Pass Type
+                            Select a Ticketing Option
                     </span> 
-                    <div id="summary">
-                        Your champions brought visitors
-                    </div>
+                    <div id="summary"> hi </div>
                 </div>
                 
             </div>
             <div class="row">
                 <div class="span1"  id="champ-table">
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="London">
-                        <div class="champion-preview button-off">        
+                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="singleTrip">
+                        <div class="champion-preview">        
                             <div class="rank">A</div>            
                         </div>
                     </a>
@@ -49,7 +47,7 @@
                             <div class="rank">C</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Paris">
+                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="roundTrip">
                         <div class="champion-preview">        
                             <div class="rank">D</div>            
                         </div>
@@ -69,15 +67,27 @@
                     </div>-->
              
                     <section>
-                        <div class="section-content content-lg">           
-                             <div class="title">Muni Ticket</div>
-                             <img src="img/muni-ticket.jpg" />                    
+                        <div class="section-content content">           
+                             <div class="title">Single Trip on Muni</div>
+                             <div class="desc">Disposable Ticket</div>                    
                         </div>        
                     </section>
                     <section>
-                        <div class="section-content content-lg right">            
+                        <div class="section-content content right">            
+                            <div class="title">View balance or add value to Muni Ticket</div>       
+                        </div>    
+                    </section>
+
+                    <section>
+                        <div class="section-content content">           
+                             <div class="title">Round Trip on Muni</div>
+                             <div class="desc">Disposable Ticket</div>                    
+                        </div>        
+                    </section>
+                    <section>
+                        <div class="section-content content right">            
                             <div class="title">Clipper Card</div>       
-                            <img src="img/clipper-card.jpg" />                     
+                            <div class="desc">Reusable Card</div>                    
                         </div>    
                     </section>
 
@@ -86,10 +96,9 @@
                              <div class="title">Help</div>
                         </div>        
                     </section>
-
                     <section>
                         <div class="section-content content-sm right">           
-                             <div class="title"><span style="-webkit-locale: 'zh-Hans';" lang="zh-Hans">汉语</span></div>
+                             <div class="title">{Switch to Chinese}</div>
                         </div>        
                     </section>
                 </div>
@@ -97,7 +106,7 @@
 
                 <div class="span1"  id="champ-table">                    
                     <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="blank">
-                        <div class="champion-preview button-off">        
+                        <div class="champion-preview">        
                             <div class="rank">F</div>            
                         </div>
                     </a>
@@ -126,14 +135,14 @@
         </div> 
 
         <!-- SECOND INNER CONTAINER -->
-        <div class="inner-container" id="Paris">
+        <div class="inner-container" id="singleTrip">
             <div class="row" id="aggregate">
                 <div class="span12 inner">
                     <span class="number-highlight">
-                            Muni Ticket
+                            Single Trip on Muni
                     </span> 
                     <div id="summary">
-                        Do stuff
+                        Disposable Ticket
                     </div>
                 </div>
                 
@@ -170,29 +179,50 @@
                 </div>
                 
                 <div class="span10" id="champion">
-                    <!--<div id="champ-details">
-                    </div>-->
-             
                     <section>
-                        <div class="section-content">           
-                             <div class="title">One Trip</div>                    
+                        <div class="section-content">
+                            <div class="price">
+                                <span class="symbol">$</span>
+                                2.50
+                            </div>            
+                             <div class="title">Adult</div>                    
                         </div>        
                     </section>
                     <section>
-                        <div class="section-content right">            
-                            <div class="title">Add Value</div>                           
+                        <div class="section-content right">
+                            <div class="price">
+                                <span class="symbol">$</span>
+                                1.35
+                            </div>             
+                            <div class="title">Senior</div> 
+                            <div class="desc">Age 65+</div>                          
                         </div>    
                     </section>
 
                     <section>
-                        <div class="section-content">           
-                             <div class="title">Round Trip</div>                    
+                        <div class="section-content">  
+                            <div class="price">
+                                <span class="symbol">$</span>
+                                1.35
+                            </div>           
+                            <div class="title">Youth</div>
+                            <div class="desc">Age 5 - 17</div>                   
                         </div>        
                     </section>
                     <section>
-                        <div class="section-content right">            
-                            <div class="title">View Balance</div>                           
+                        <div class="section-content right">
+                            <div class="price">
+                                <span class="symbol">$</span>
+                                1.50
+                            </div>             
+                            <div class="title">Disabled</div>                           
                         </div>    
+                    </section>
+
+                     <section>
+                        <div class="section-content content-sm">           
+                             <div class="title">Back</div>
+                        </div>        
                     </section>
                 </div>
 
@@ -216,6 +246,121 @@
                 </div>
             </div> 
         </div> 
+
+
+
+        <!-- THIRD INNER CONTAINER -->
+        <div class="inner-container" id="roundTrip">
+            <div class="row" id="aggregate">
+                <div class="span12 inner">
+                    <span class="number-highlight">
+                            Round Trip on Muni
+                    </span> 
+                    <div id="summary">
+                        Disposable Ticket
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="span1"  id="champ-table">
+                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="London">
+                        <div class="champion-preview">        
+                            <div class="rank">A</div>            
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Paris">
+                        <div class="champion-preview button-off">        
+                            <div class="rank">B</div>            
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Paris">
+                        <div class="champion-preview button-off">        
+                            <div class="rank">C</div>            
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Paris">
+                        <div class="champion-preview">        
+                            <div class="rank">D</div>            
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="London">
+                        <div class="champion-preview">        
+                            <div class="rank">E</div>            
+                        </div>
+                    </a>
+
+
+                </div>
+                
+                <div class="span10" id="champion">
+                    <section>
+                        <div class="section-content">
+                            <div class="price">
+                                <span class="symbol">$</span>
+                                5.00
+                            </div>            
+                             <div class="title">Adult</div>                    
+                        </div>        
+                    </section>
+                    <section>
+                        <div class="section-content right">
+                            <div class="price">
+                                <span class="symbol">$</span>
+                                2.70
+                            </div>             
+                            <div class="title">Senior</div> 
+                            <div class="desc">Age 65+</div>                          
+                        </div>    
+                    </section>
+
+                    <section>
+                        <div class="section-content">  
+                            <div class="price">
+                                <span class="symbol">$</span>
+                                2.70
+                            </div>           
+                            <div class="title">Youth</div>
+                            <div class="desc">Age 5 - 17</div>                   
+                        </div>        
+                    </section>
+                    <section>
+                        <div class="section-content right">
+                            <div class="price">
+                                <span class="symbol">$</span>
+                                3.00
+                            </div>             
+                            <div class="title">Disabled</div>                           
+                        </div>    
+                    </section>
+
+                     <section>
+                        <div class="section-content content-sm">           
+                             <div class="title">Back</div>
+                        </div>        
+                    </section>
+                </div>
+
+
+                <div class="span1"  id="champ-table">                    
+                    <div class="champion-preview">        
+                        <div class="rank">F</div>            
+                    </div>
+                    <div class="champion-preview button-off">        
+                        <div class="rank">G</div>            
+                    </div>
+                    <div class="champion-preview button-off">        
+                        <div class="rank">H</div>            
+                    </div>
+                    <div class="champion-preview">        
+                        <div class="rank">I</div>            
+                    </div>
+                    <div class="champion-preview button-off">        
+                        <div class="rank">J</div>            
+                    </div>
+                </div>
+            </div> 
+        </div>
 
 
     </div>
