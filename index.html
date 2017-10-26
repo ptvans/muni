@@ -20,13 +20,119 @@
                 <img src="img/sfmta-logo.png"></img>
             </div>
         </div>
-        <div class="inner-container active" id="London">
+        
+
+        <!-- ZEROTH INNER CONTAINER -->
+        <div class="inner-container active" id="Trains">
+            <div class="row" id="aggregate">
+                <div class="span12 inner">
+                    <span class="number-highlight">
+                        Next Train Arriving:                     
+                    </span> 
+                    <div id="summary"> &nbsp; </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="span1"  id="champ-table">
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="singleTrip">
+                        <div class="champion-preview">        
+                            <div class="rank">A</div>            
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="Paris">
+                        <div class="champion-preview">        
+                            <div class="rank">B</div>            
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="Tokyo">
+                        <div class="champion-preview">        
+                            <div class="rank">C</div>            
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Tickets">
+                        <div class="champion-preview">        
+                            <div class="rank">D</div>            
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" type="button" class="tablinks button-dead" onclick="pop(this)" data-name="Paris">
+                        <div class="champion-preview">        
+                            <div class="rank">E</div>            
+                        </div>
+                    </a>
+
+
+
+                </div>
+                
+                <div class="span10" id="champion">
+                    <!--<div id="champ-details">
+                    </div>-->
+                    <img class="train-times" src="img/train-times.png"></img>
+                    
+                    <section>
+                        <div class="section-content content-sm">           
+                             <div class="title">Get Tickets</div>
+                        </div>        
+                    </section>
+                    <section>
+                        <div class="section-content content-sm right">           
+                             <div class="title">Enter Code</div>
+                        </div>        
+                    </section>
+
+                    <section>
+                        <div class="section-content content-sm">           
+                             <div class="title">Help</div>
+                        </div>        
+                    </section>
+                    <section>
+                        <div class="section-content content-sm right">           
+                             <div class="title">{Switch to Chinese}</div>
+                        </div>        
+                    </section>
+                </div>
+
+
+                <div class="span1"  id="champ-table">                    
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="blank">
+                        <div class="champion-preview">        
+                            <div class="rank">F</div>            
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="blank">
+                        <div class="champion-preview">        
+                            <div class="rank">G</div>            
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="blank">
+                        <div class="champion-preview">        
+                            <div class="rank">H</div>            
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" type="button" class="tablinks button-dead" onclick="pop(this)" data-name="Clipper">
+                        <div class="champion-preview">        
+                            <div class="rank">I</div>            
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)" type="button" class="tablinks button-dead" onclick="pop(this)" data-name="blank">
+                        <div class="champion-preview">        
+                            <div class="rank">J</div>            
+                        </div>
+                    </a>
+                </div>
+            </div> 
+        </div> 
+
+
+        <!-- FIRST INNER CONTAINER -->
+        <div class="inner-container" id="Tickets">
             <div class="row" id="aggregate">
                 <div class="span12 inner">
                     <span class="number-highlight">
                             Select a Ticketing Option
                     </span> 
-                    <div id="summary"> hi </div>
+                    <div id="summary"> &nbsp; </div>
                 </div>
                 
             </div>
@@ -37,13 +143,13 @@
                             <div class="rank">A</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Paris">
-                        <div class="champion-preview button-off">        
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="Paris">
+                        <div class="champion-preview">        
                             <div class="rank">B</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Tokyo">
-                        <div class="champion-preview button-off">        
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="Tokyo">
+                        <div class="champion-preview">        
                             <div class="rank">C</div>            
                         </div>
                     </a>
@@ -52,7 +158,7 @@
                             <div class="rank">D</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Paris">
+                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Trains">
                         <div class="champion-preview">        
                             <div class="rank">E</div>            
                         </div>
@@ -92,40 +198,35 @@
                     </section>
 
                     <section>
-                        <div class="section-content content-sm">           
-                             <div class="title">Help</div>
-                        </div>        
-                    </section>
-                    <section>
-                        <div class="section-content content-sm right">           
-                             <div class="title">{Switch to Chinese}</div>
+                        <div class="section-content content-sm back">           
+                             <div class="title">Back</div>
                         </div>        
                     </section>
                 </div>
 
 
                 <div class="span1"  id="champ-table">                    
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="blank">
+                    <a href="javascript:void(0)" type="button" class="tablinks button-dead" onclick="pop(this)" data-name="blank">
                         <div class="champion-preview">        
                             <div class="rank">F</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="blank">
-                        <div class="champion-preview button-off">        
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="blank">
+                        <div class="champion-preview">        
                             <div class="rank">G</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="blank">
-                        <div class="champion-preview button-off">        
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="blank">
+                        <div class="champion-preview">        
                             <div class="rank">H</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Clipper">
+                    <a href="javascript:void(0)" type="button" class="tablinks button-dead" onclick="pop(this)" data-name="Clipper">
                         <div class="champion-preview">        
                             <div class="rank">I</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="blank">
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="blank">
                         <div class="champion-preview">        
                             <div class="rank">J</div>            
                         </div>
@@ -149,7 +250,7 @@
             </div>
             <div class="row">
                 <div class="span1"  id="champ-table">
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="London">
+                    <a href="javascript:void(0)" type="button" class="tablinks button-dead" onclick="pop(this)" data-name="London">
                         <div class="champion-preview">        
                             <div class="rank">A</div>            
                         </div>
@@ -164,18 +265,16 @@
                             <div class="rank">C</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Paris">
+                    <a href="javascript:void(0)" type="button" class="tablinks button-dead" onclick="pop(this)" data-name="Paris">
                         <div class="champion-preview">        
                             <div class="rank">D</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="London">
+                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Tickets">
                         <div class="champion-preview">        
                             <div class="rank">E</div>            
                         </div>
                     </a>
-
-
                 </div>
                 
                 <div class="span10" id="champion">
@@ -220,7 +319,7 @@
                     </section>
 
                      <section>
-                        <div class="section-content content-sm">           
+                        <div class="section-content content-sm back">           
                              <div class="title">Back</div>
                         </div>        
                     </section>
@@ -228,7 +327,7 @@
 
 
                 <div class="span1"  id="champ-table">                    
-                    <div class="champion-preview">        
+                    <div class="champion-preview button-dead">        
                         <div class="rank">F</div>            
                     </div>
                     <div class="champion-preview button-off">        
@@ -237,7 +336,7 @@
                     <div class="champion-preview button-off">        
                         <div class="rank">H</div>            
                     </div>
-                    <div class="champion-preview">        
+                    <div class="champion-preview button-dead">        
                         <div class="rank">I</div>            
                     </div>
                     <div class="champion-preview button-off">        
@@ -264,27 +363,27 @@
             </div>
             <div class="row">
                 <div class="span1"  id="champ-table">
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="London">
+                    <a href="javascript:void(0)" type="button" class="tablinks button-dead" onclick="pop(this)" data-name="London">
                         <div class="champion-preview">        
                             <div class="rank">A</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Paris">
-                        <div class="champion-preview button-off">        
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="Paris">
+                        <div class="champion-preview">        
                             <div class="rank">B</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Paris">
-                        <div class="champion-preview button-off">        
+                    <a href="javascript:void(0)" type="button" class="tablinks button-off" onclick="pop(this)" data-name="Paris">
+                        <div class="champion-preview">        
                             <div class="rank">C</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Paris">
+                    <a href="javascript:void(0)" type="button" class="tablinks button-dead" onclick="pop(this)" data-name="Paris">
                         <div class="champion-preview">        
                             <div class="rank">D</div>            
                         </div>
                     </a>
-                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="London">
+                    <a href="javascript:void(0)" type="button" class="tablinks" onclick="pop(this)" data-name="Tickets">
                         <div class="champion-preview">        
                             <div class="rank">E</div>            
                         </div>
@@ -335,7 +434,7 @@
                     </section>
 
                      <section>
-                        <div class="section-content content-sm">           
+                        <div class="section-content content-sm back">           
                              <div class="title">Back</div>
                         </div>        
                     </section>
@@ -343,7 +442,7 @@
 
 
                 <div class="span1"  id="champ-table">                    
-                    <div class="champion-preview">        
+                    <div class="champion-preview button-dead">        
                         <div class="rank">F</div>            
                     </div>
                     <div class="champion-preview button-off">        
@@ -352,7 +451,7 @@
                     <div class="champion-preview button-off">        
                         <div class="rank">H</div>            
                     </div>
-                    <div class="champion-preview">        
+                    <div class="champion-preview button-dead">        
                         <div class="rank">I</div>            
                     </div>
                     <div class="champion-preview button-off">        

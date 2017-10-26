@@ -9,7 +9,7 @@ body {
 }
 
 #container {
-	background-color: #fbfbfc;
+	background-color: #F3F5F7;
 	font-family: 'Helvetica Neue', 'Arial', sans-serif;
 	font-size: 18px;
 	color: #666;
@@ -17,7 +17,7 @@ body {
 	}
 	
 #nav {
-	background-color: #f0f2f3;
+	background-color: #E4E8EC;
 	padding: 6px 18px 8px 18px;
 	height: 50px;
 }	
@@ -148,6 +148,12 @@ i {
     margin-bottom: 10px;
 }
 	
+.train-times {
+  margin: 0 -30px 52px -30px;
+  width: 900px;
+  max-width: 108%;
+}
+
 #champ-table {
     margin-top: 188px;
     overflow-x: hidden;
@@ -393,9 +399,19 @@ rect.pledge {
 }
 
 .button-off {
-  opacity: 0;
+  pointer-events: none;
+  visibility: hidden
+}
+
+.button-off a {
+  
+}
+
+.button-dead {
+  opacity: 80%;
   pointer-events: none;
 }
+
 
 .rank {
   height: 100%;
@@ -544,6 +560,20 @@ rect.pledge {
     margin-bottom: 16px;
 }
 
+.section-content.filler {
+    height: 378px;
+}
+
+.section-content.back {
+  background-color: #3C679A;
+  color: #fff;
+  border-color: #2D5380;
+}
+
+.section-content.back .title{
+  color: #fff;
+}
+
 .heading {
     background-color: #ccc;
 }
@@ -618,6 +648,7 @@ section .section-content.center .title {
   font-size: 250%;
   top: 24px;
   padding: 10px;
+  font-weight: 500;
 }
 
 .channel {
