@@ -1,6 +1,6 @@
 # muni
 Muni Ticket Machine
 
-Only A and D work on the first screen!
+Prototype created as part of a UX Design challenge for interview process
 
-Only E works on the second screen!
+Code quality = terrible
